@@ -6,7 +6,7 @@ package control.de.errores;
 
 /**
  *
- * @author marcos
+ * @author Marco_Gall
  */
 import java.util.Scanner;
 public class ControlDeErrores {
@@ -52,6 +52,9 @@ public class ControlDeErrores {
                     }
                 }
                 case 3 -> {
+                    mostrarFormularioRegistro();
+                }
+                case 4 -> {
                     continuar = false;
                     System.out.println("Saliendo del sistema...");
                 }
@@ -68,6 +71,7 @@ public class ControlDeErrores {
         System.out.println("Stock actual: " + stock + " computadoras");
         System.out.println("1. Ingresar computadoras al stock");
         System.out.println("2. Retirar computadoras del stock");
+        System.out.println("3. Registrarse");
         System.out.println("3. Salir");
     }
 
@@ -100,6 +104,14 @@ public class ControlDeErrores {
         }
     }
     public static void mostrarFormularioRegistro() {
-    System.out.println("Formulario de Registro: Nombre, Email, Password");
+    System.out.println("\n=== FORMULARIO DE REGISTRO ===");
+    System.out.print("Ingrese su nombre: ");
+    String nombre = scanner.next();
+    System.out.print("Ingrese su correo electrónico: ");
+    String correo = scanner.next();
+    System.out.print("Ingrese su contraseña: ");
+    String contrasena = scanner.next();
+    System.out.println("Registro exitoso. Bienvenido, " + nombre + "!");
+    pausar();
     }
 }
