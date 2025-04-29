@@ -72,7 +72,7 @@ public class ControlDeErrores {
         System.out.println("1. Ingresar computadoras al stock");
         System.out.println("2. Retirar computadoras del stock");
         System.out.println("3. Registrarse");
-        System.out.println("3. Salir");
+        System.out.println("4. Salir");
     }
 
     public static int leerEntero(String mensaje) {
